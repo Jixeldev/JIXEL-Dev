@@ -205,6 +205,16 @@ footer {
   width: 30px;
   height: auto;
 }
+body {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+body.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* NAV STACK ON MOBILE ONLY */
 @media (max-width: 768px) {
   nav {
@@ -263,4 +273,5 @@ footer {
     background-size: 90% 120px;
     padding: 30px;
   }
+
 }
